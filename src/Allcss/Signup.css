@@ -1,14 +1,15 @@
-
-  .cont {
-    background-color:white;
+ 
+ .cont {
+    background-color:#1b0a41e7;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.login-container {
-    background: linear-gradient(135deg, #ff4081, #7c4dff);
+.signup-container {
+    /* background: linear-gradient(135deg, #ff4081, #7c4dff); */
+    background: #7e5ae2;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
@@ -60,7 +61,7 @@ input[type="password"]:focus {
     font-size: 16px;
     border: none;
     border-radius: 8px;
-    background-color: #7c4dff;
+    background-color:#3e0b8f;
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -68,7 +69,7 @@ input[type="password"]:focus {
 }
 
 .abtn:hover {
-    background-color: #651fff;
+    background-color:#6e3cfafd;
     transform: scale(1.05);
 }
 

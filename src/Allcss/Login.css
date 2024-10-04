@@ -1,6 +1,6 @@
 
 .cont {
-  background-color:white!important;
+  background-color:#281550;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -8,7 +8,7 @@
 }
 
 .login-container {
-  background: linear-gradient(135deg, #ff4081, #7c4dff);
+  background: #7e5ae2;
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
@@ -29,6 +29,7 @@ label {
   margin-bottom: 10px;
   font-size: 16px;
   text-align: left;
+  font-weight:bold;
 }
 
 input[type="email"],
@@ -42,6 +43,8 @@ input[type="password"] {
   color: #fff;
   font-size: 14px;
   outline: none;
+  
+
 }
 
 input[type="email"]::placeholder,
@@ -60,14 +63,14 @@ input[type="password"]:focus {
   font-size: 16px;
   border: none;
   border-radius: 8px;
-  background-color: #ff4081;
+  background-color:#3e0b8f;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .ybtn:hover {
-  background-color: #e91e63;
+  background-color:#6e3cfafd;
 }
 
 .new {
@@ -80,13 +83,13 @@ input[type="password"]:focus {
 }
 
 .sign-up-link {
-  color: #7c4dff;
+  color: #fcfbfd;
   text-decoration: none;
   font-weight: bold;
 }
 
 .sign-up-link:hover {
-  color: #ff4081;
+  color: #3e0b8f;
   text-decoration: underline;
 }
 

@@ -70,7 +70,6 @@ const LoginForm: React.FC = () => {
                 </form>
 
                 <div className="new">
-                    <h5>New User?</h5>
                     <Link to="/signup" className="sign-up-link">
                         Sign up here
                     </Link>

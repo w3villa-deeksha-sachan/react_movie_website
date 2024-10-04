@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import "../Allcss/MovieDetails.css";
 
@@ -8,6 +8,7 @@ const API_KEY = "3f382146";
 const MovieDetail: React.FC = () => {
   const { id } = useParams();
   const [movie, setMovie] = useState<any>(null);
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     const fetchMovieDetail = async () => {
@@ -23,6 +24,10 @@ const MovieDetail: React.FC = () => {
 
     fetchMovieDetail();
   }, [id]);
+
+  const back =() =>{
+    navigate('/home');
+  };
 
   return (
     <div className="w">
@@ -43,11 +48,15 @@ const MovieDetail: React.FC = () => {
 
           </div>
           </div>
+          <button onClick={back} className="back-btn"> Back </button>
          
         </div>
       ) : (
         <p>Loading movie details...</p>
       )}
+      
+     
+     
     </div>
   );
 };

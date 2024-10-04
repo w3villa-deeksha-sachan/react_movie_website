@@ -39,7 +39,7 @@ const SignupForm: React.FC = () => {
 
     return (
         <div className="cont">
-            <div className="login-container">
+            <div className="signup-container">
                 <h1>Sign Up</h1>
                 {error && <p style={{ color: "red" }}>{error}</p>}
 

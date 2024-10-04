@@ -10,6 +10,8 @@ interface ProtectedRouteProps {
 const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
   const { isAuthenticated } = useAuth();
 
+  console.log('Is authenticated:', isAuthenticated);
+
   // If the user is not authenticated, navigate to the login page
   if (!isAuthenticated) {
     return <Navigate to="/login" />;
